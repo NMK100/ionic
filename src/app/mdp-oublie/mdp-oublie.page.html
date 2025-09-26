@@ -1,0 +1,41 @@
+<ion-content [fullscreen]="true" class="fond">
+
+  <div class="bandeau-superieur" role="banner">
+    <div class="bandeau-interne"></div>
+  </div>
+
+  <div class="conteneur-principal">
+    <div class="bandeau-titre-page">
+      <ion-icon name="arrow-back-outline" (click)="goBack()"></ion-icon>
+      <h1 class="titre-page">Mot de passe oublié ?</h1>
+    </div>
+
+    <div class="carte-formulaire">
+      <div class="logo-zone-carte">
+        <img src="assets/logo.png" alt="Logo Application" class="logo" />
+      </div>
+
+      <p class="instruction-text">Veuillez saisir votre email pour réinitialiser votre mot de passe</p>
+
+      <ion-item lines="none" class="champ-saisie">
+        <ion-icon name="mail-outline" slot="start" class="input-icon"></ion-icon>
+        <ion-input
+          [(ngModel)]="email"
+          name="email"
+          type="email"
+          placeholder="Email"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-button class="btn-continuer" (click)="reinitialiserMotDePasse()">
+        Continuer
+      </ion-button>
+    </div>
+
+    <div class="illustration-zone">
+      <img src="mdp1.png" alt="mot de passe oublié" class="OUBLIE" />
+    </div>
+    
+  </div>
+</ion-content>

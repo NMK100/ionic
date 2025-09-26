@@ -1,0 +1,7 @@
+{
+  "name": "den",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,130 @@
+
+.fond {
+  --background: #ffffff; 
+}
+
+.bandeau-superieur {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.bandeau-interne {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: #30d5c8;
+  border-bottom-left-radius: 80px; 
+  border-bottom-right-radius: 80px; 
+  box-shadow: 0 6px 18px rgba(48, 213, 200, 0.12);
+  z-index: 1;
+}
+
+.logo-zone {
+  position: absolute; 
+  z-index: 2;
+  top: 50px; 
+  left: 90px; 
+}
+
+.logo {
+  width: 270px;
+  height: 130px;
+  display: block;
+}
+
+.conteneur-connexion {
+  position: relative;
+  z-index: 3;
+  margin: -80px auto 0;
+  width: 90%;
+  gap: 20px;
+  max-width: 400px; 
+  background: #ffffff;
+  border-radius: 30px; 
+  padding: 30px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre {
+  width: 100%;
+  text-align: left;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #30d5c8; 
+}
+
+.champ-saisie {
+  width: 100%;
+  margin-bottom: 16px;
+  --background: #ffffff; 
+  border-radius: 10px; 
+  --border-radius: 12px;
+  box-shadow: 0 0 2px 2px #30d5c8;
+  padding: 0; 
+}
+
+
+ion-item .input-icon {
+  margin-right: 20px;
+  color: #30d5c8; 
+}
+
+ion-input {
+  --padding-start: 12px; 
+}
+
+.ligne-bas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.souvenir {
+  align-items: center;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  min-width: 0;
+  --color: #30d5c8; 
+}
+
+.souvenir ion-checkbox {
+  --border-radius: 4px; 
+  --checkbox-background-checked: #30d5c8;
+  margin-right: 8px;
+}
+
+.lien-mdp {
+  text-align: right;
+  min-width: 0;
+}
+
+.lien-rouge {
+  color: #ff3b30;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+ion-button.btn-connexion {
+  width: 100%;
+  --background: #30d5c8;
+  --color: #ffffff;
+  border-radius: 20px;
+  font-weight: bold;
+  height: 48px;
+  text-transform: none; 
+}

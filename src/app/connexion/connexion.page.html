@@ -1,0 +1,56 @@
+<ion-content [fullscreen]="true" class="fond">
+
+  <div class="bandeau-superieur" role="banner" aria-hidden="true">
+    <div class="bandeau-interne"></div>
+  </div>
+
+  <div class="logo-zone" aria-hidden="false">
+    <img src="assets/logo.png" alt="Logo Application" class="logo" />
+  </div>
+
+  <div class="conteneur-connexion">
+    <h1 class="titre">Connexion</h1>
+
+    <ion-item lines="none" class="champ-saisie">
+      <ion-icon name="mail-outline" slot="start" class="input-icon"></ion-icon>
+      <ion-input
+        [(ngModel)]="email"
+        name="email"
+        type="email"
+        placeholder="Email"
+        required>
+      </ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="champ-saisie">
+      <ion-icon name="lock-closed-outline" slot="start" class="input-icon"></ion-icon>
+      <ion-input
+        [(ngModel)]="motDePasse"
+        name="motDePasse"
+        type="password"
+        placeholder="Mot de passe"
+        required>
+      </ion-input>
+      <ion-icon name="eye-outline" slot="end" class="input-icon"></ion-icon>
+    </ion-item>
+
+    <div class="ligne-bas">
+      <ion-item lines="none" class="souvenir">
+        <ion-checkbox
+          slot="start"
+          [(ngModel)]="seSouvenir"
+          name="seSouvenir">
+        </ion-checkbox>
+        <ion-label>Se souvenir de moi</ion-label>
+      </ion-item>
+
+      <div class="lien-mdp">
+        <a class="lien-rouge" (click)="goToForgotPassword()">Mot de passe oublié ?</a>
+      </div>
+    </div>
+
+    <ion-button class="btn-connexion" (click)="connexion()">
+      Se connecter
+    </ion-button>
+  </div>
+</ion-content>

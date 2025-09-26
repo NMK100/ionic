@@ -1,0 +1,114 @@
+
+.fond {
+  --background: #ffffff;
+}
+
+
+.bandeau-superieur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bandeau-interne {
+  width: 100%;
+  height: 250px;
+  background: #30d5c8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.conteneur-principal {
+  position: relative;
+  z-index: 2;
+  margin-top: 50px; 
+  padding: 0 20px;
+}
+
+
+.bandeau-titre-page {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #ffffff; 
+}
+
+.titre-page {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+ion-icon[name="arrow-back-outline"] {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.carte-formulaire {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-zone-carte {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-zone-carte .logo {
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.instruction-text {
+  text-align: center;
+  font-size: 15px;
+  color: #8c8c8c;
+  margin-bottom: 20px;
+}
+
+
+.champ-saisie {
+  width: 100%;
+  margin-bottom: 20px;
+  --background: #ffffff;
+  border-radius: 12px;
+  --border-radius: 10px;
+  box-shadow: 0 0 2px 2px #30d5c8;
+  padding: 0;
+}
+
+.champ-saisie .input-icon {
+  margin-right: 20px;
+  color: #30d5c8;
+}
+
+ion-button.btn-continuer {
+  width: 100%;
+  --background: #30d5c8;
+  --color: #ffffff;
+  border-radius: 30px;
+  font-weight: bold;
+  height: 48px;
+  text-transform: none;
+}

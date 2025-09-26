@@ -1,0 +1,126 @@
+<ion-content [fullscreen]="true" class="page-accueil-fond">
+
+  <div class="zone-fond-profil"></div>
+
+  <div class="carte-profil">
+    <div class="contenu-profil">
+
+      <div class="details-profil">
+        
+        <div class="conteneur-avatar">
+          <img src="assets/avatar.png" alt="Avatar de profil" class="avatar-profil" />
+        </div>
+
+        <div class="conteneur-info">
+          <p class="nom-profil">Prénom et Nom</p>
+          <p class="info-profil">Moussa Keita</p>
+          <p class="nom-profil">Parrainé</p>
+          <p class="info-profil">Oui</p>
+          <p class="nom-profil">École</p>
+          <p class="info-profil">Mohamed Traore</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="zone-contenu-principal">
+
+    <h2 class="titre-section-carte">Nouvelle Du parrainé</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <div class="carte-statistique">
+            <span class="nombre-carte">3</span>
+            <div class="details-carte">
+              <ion-icon name="person" class="icone-carte"></ion-icon>
+              <p>Profil</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="carte-statistique">
+            <span class="nombre-carte">1</span>
+            <div class="details-carte">
+              <ion-icon name="megaphone" class="icone-carte"></ion-icon>
+              <p>Bulletin</p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <h2 class="titre-section-carte">Academique</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <div class="carte-statistique">
+            <span class="nombre-carte">14</span>
+            <div class="details-carte">
+              <ion-icon name="shield" class="icone-carte" (click)="parrainage()"></ion-icon>
+              <p>Parrainage</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="carte-statistique">
+            <span class="nombre-carte">14</span>
+            <div class="details-carte">
+              <ion-icon name="cash-outline" class="icone-carte"></ion-icon>
+              <p>Scolarité</p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <h2 class="titre-section-carte">Communication</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <div class="carte-statistique">
+            <span class="nombre-carte">10</span>
+            <div class="details-carte">
+              <ion-icon name="chatbox-ellipses" class="icone-carte"></ion-icon>
+              <p>Chat</p>
+            </div>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="carte-statistique">
+            <span class="nombre-carte">10</span>
+            <div class="details-carte">
+              <ion-icon name="calendar-sharp" class="icone-carte"></ion-icon>
+              <p>Absence</p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="deconnexion()">
+      <ion-icon name="log-out-outline"></ion-icon>
+      <ion-label>Déconnexion</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon name="people-outline"></ion-icon>
+      <ion-label (click)="parrainage()">Parrainage</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button class="onglet-actif">
+      <ion-icon name="person"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button>
+      <ion-icon name="notifications-outline"></ion-icon>
+      <ion-label>Notification</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

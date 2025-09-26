@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar class="topbar">
+    <div class="profil">
+      <ion-avatar>
+        <img src="assets/avatar.png" alt="avatar" />
+      </ion-avatar>
+      <div class="profil-texte">
+        <div class="petit">Parrainé par</div>
+        <div class="nom">Daba Diallo</div>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Dépenses couvertes</h2>
+  <div class="filtres">
+    <ion-button fill="outline" size="small" (click)="ouvrirFiltreCategorie()">
+      Catégorie
+      <ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+    </ion-button>
+
+    <ion-button fill="outline" size="small" (click)="ouvrirFiltreDate()">
+      Date
+      <ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="liste">
+    <ion-card class="carte-depense" *ngFor="let d of depenses">
+      <ion-card-content>
+        <div class="ligne">
+          <div class="gauche">
+            <div class="titre">{{ d.titre }}</div>
+            <div class="montant">{{ d.montant | number:'1.0-0' }} FCFA</div>
+          </div>
+          <div class="droite">
+            <div class="date">{{ formaterDate(d.date) }}</div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="separateur"></div>
+
+  <div class="ligne-total">
+    <div class="libelle">Total</div>
+    <div class="valeur">{{ total | number:'1.0-0' }} FCFA</div>
+  </div>
+
+  <ion-button expand="block" class="btn-signal" (click)="signalerDepense()">
+    Signaler une <br> dépense
+  </ion-button>
+
+</ion-content>

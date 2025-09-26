@@ -1,0 +1,102 @@
+.topbar {
+  --background: #ffffff;
+  color: #000000;
+  padding: 10px 16px;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profil ion-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profil-texte .petit {
+  font-size: 18px;
+  opacity: 0.9;
+  color: #777;
+}
+
+.profil-texte .nom {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.filtres {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin: 16px 0;
+}
+
+.carte-depense {
+  --background: #f7f7f7;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+  padding: 10px;
+}
+
+.carte-depense .ligne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carte-depense .titre { 
+    font-weight: 600; 
+    margin-bottom: 6px; 
+    color: #000;
+}
+.carte-depense .montant { 
+    font-size: 14px; 
+    color: #444; 
+}
+.carte-depense .date { 
+    font-size: 12px; 
+    color: #777; 
+    text-align: right; 
+}
+
+.separateur {
+  height: 2px;
+  background: #777;
+  margin: 18px 0;
+}
+
+.ligne-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+
+}
+
+.ligne-total .libelle {
+     font-weight: bold;
+     font-size: 18px; 
+    }
+.ligne-total .valeur { 
+    color: #ff6600; 
+    font-weight: 800; 
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.btn-signal {
+    font-size: 15px;
+    font-weight: 500px;
+  --border-radius: 15px;
+  --background: #ff6600;
+  --color: #000;
+    width: 147px;
+    height: 50px;
+    margin-left: 65%;
+}

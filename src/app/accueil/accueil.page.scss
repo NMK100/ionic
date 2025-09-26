@@ -1,0 +1,152 @@
+
+.page-accueil-fond {
+  --background: #f5f6f8;
+}
+
+.zone-fond-profil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; 
+  background-color: #D9D9D9; 
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  z-index: 1; 
+}
+
+.carte-profil {
+  width: 90%; 
+  max-width: 450px;
+  margin: 40px auto 0 auto; 
+  height: 158px;
+  background: #30d5c8;
+  border-radius: 20px; 
+  padding: 24px;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  z-index: 2; 
+}
+
+.contenu-profil {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.icone-menu {
+  font-size: 28px;
+  margin-bottom: 16px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 4; 
+}
+
+.details-profil {
+  display: flex;
+  align-items: left; 
+  width: 100%;
+}
+
+
+.conteneur-avatar {
+  margin-top: -64px; 
+  position: relative;
+  z-index: 3;
+}
+
+.avatar-profil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+.conteneur-info {
+   margin-top: 50px; 
+}
+
+.nom-profil {
+  font-size: 13px;
+  margin: 0;
+  color: white;
+}
+
+.info-profil {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.zone-contenu-principal {
+  margin-top: 10px; 
+  padding: 0 16px;
+  padding-bottom: 70px; 
+  position: relative;
+  z-index: 5;
+}
+
+.titre-section-carte {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 24px 0 12px 0;
+  color: #333;
+}
+
+.carte-statistique {
+  background: #D9D9D9;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 0 4px 4px rgba(51, 51, 51, 0.08);
+  text-align: center;
+  width: 130px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.nombre-carte {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.details-carte {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icone-carte {
+  font-size: 55px;
+  color:  #30d5c8;
+}
+
+.carte-statistique p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+
+ion-tab-bar {
+  --background:  #30d5c8;
+}
+
+ion-tab-button {
+  --ripple-color: transparent;
+  --color: #ffffff;
+  --color-selected: #ffffff;
+}
+
+.onglet-actif {
+  ion-icon, ion-label {
+    color: #FFA600; 
+  }
+}
