@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NavController } from '@ionic/angular';
+import { NavController, IonicModule } from '@ionic/angular';
 
 import {
   IonContent,
@@ -32,21 +32,31 @@ import {
     IonTabBar,
     IonTabButton,
     IonLabel,
-    IonContent
+    IonContent,
+    IonicModule
 ]
 })
 export class AccueilPage {
+  afficherNotifications: boolean = false;
+  segment: string = 'list';
+deleteAll: boolean = false;
+theme: string = 'light';
+
 
   constructor(private navCtrl: NavController) { }
 
-  parrainage(){
-    this.navCtrl.navigateRoot('/depenses')
+  parrainage() {
+    this.navCtrl.navigateRoot('/depenses');
   }
-  
-  deconnexion() {
 
+  deconnexion() {
     this.navCtrl.navigateRoot('/connexion');
   }
 
- 
+  bulletin() {
+    this.navCtrl.navigateRoot('/bulletin');
+  }
+  toggleNotifications() {
+    this.afficherNotifications = !this.afficherNotifications;
+  }
 }

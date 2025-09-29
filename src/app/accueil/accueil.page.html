@@ -39,10 +39,10 @@
         </ion-col>
         <ion-col size="6">
           <div class="carte-statistique">
-            <span class="nombre-carte">1</span>
+            <span class="nombre-carte" (click)="bulletin()">1</span>
             <div class="details-carte">
-              <ion-icon name="megaphone" class="icone-carte"></ion-icon>
-              <p>Bulletin</p>
+              <ion-icon name="megaphone" class="icone-carte" (click)="bulletin()"></ion-icon>
+              <p (click)="bulletin()">Bulletin</p>
             </div>
           </div>
         </ion-col>
@@ -118,9 +118,48 @@
       <ion-label>Profil</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button>
-      <ion-icon name="notifications-outline"></ion-icon>
-      <ion-label>Notification</ion-label>
-    </ion-tab-button>
+    <ion-tab-button (click)="toggleNotifications()">
+     <ion-icon name="notifications-outline"></ion-icon>
+  <ion-label>Notification</ion-label>
+</ion-tab-button>
+
   </ion-tab-bar>
 </ion-tabs>
+
+
+<!-- Zone Notifications -->
+<div *ngIf="afficherNotifications" class="zone-notification">
+  <ion-segment [(ngModel)]="segment">
+    <ion-segment-button value="list">
+      <ion-label>Liste</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="settings">
+      <ion-label>Paramètres</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="segment === 'list'">
+    <ion-list>
+      <ion-item>
+        <ion-label>Nouvelle alerte</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Message important</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="segment === 'settings'">
+    <ion-item>
+      <ion-label>Supprimer toutes</ion-label>
+      <ion-toggle [(ngModel)]="deleteAll"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Thème</ion-label>
+      <ion-select [(ngModel)]="theme">
+        <ion-select-option value="light">Clair</ion-select-option>
+        <ion-select-option value="dark">Sombre</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+</div>
