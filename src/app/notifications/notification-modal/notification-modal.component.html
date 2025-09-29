@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Notifications</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="close()">
+        Fermer
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="title-center">
+        Paramètres
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      
+      <ion-item lines="none">
+        <ion-label>Supprimer toutes les notifications</ion-label>
+        <ion-toggle [(ngModel)]="deleteAll"></ion-toggle>
+      </ion-item>
+
+      
+      <ion-item lines="none">
+        <ion-label>Thème</ion-label>
+        <ion-select interface="popover" [(ngModel)]="theme" placeholder="Choisir">
+          <ion-select-option value="light">Clair</ion-select-option>
+          <ion-select-option value="dark">Sombre</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -34,5 +34,14 @@ export const routes: Routes = [
     path: 'bulletin',
     loadComponent: () => import('./bulletin/bulletin.page').then( m => m.BulletinPage)
   },
-  
+  {
+  path: 'tabs',
+  loadChildren: () =>
+    import('./tabs/tabs-routing.module').then((m) => m.TabsPageRoutingModule),
+},  {
+    path: 'notifications',
+    loadComponent: () => import('./notifications/notifications.page').then( m => m.NotificationsPage)
+  }
+
+
 ];

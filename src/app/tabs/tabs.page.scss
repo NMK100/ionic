@@ -1,0 +1,33 @@
+
+
+.barre-onglet {
+  --background: #30d5c8;
+  --color: #DADADA;
+  --color-selected: #FFA600;
+  border-top: 1px solid #e0e0e0;
+  padding-bottom: env(safe-area-inset-bottom); // iphone espacement en bas de l'ecran
+
+  ion-tab-button {
+    --ripple-color: transparent;
+    flex-direction: column;
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+
+    ion-icon {
+      font-size: 25px;
+    }
+
+    &.tab-selected {
+      color: #30d5c8;
+
+      ion-icon {
+        color: #ff2424;
+      }
+
+      ion-label {
+        font-weight: bold;
+        color: #36a2a2;
+      }
+    }
+  }
+}

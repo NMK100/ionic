@@ -1,0 +1,28 @@
+
+<ion-tabs>
+
+  <ion-router-outlet></ion-router-outlet>
+
+  <ion-tab-bar slot="bottom" class="barre-onglet">
+    <ion-tab-button tab="accueil" [routerLink]="['/tabs/accueil']">
+      <ion-icon name="home-outline" aria-label="Accueil"></ion-icon>
+      <ion-label>Accueil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="depenses" [routerLink]="['/tabs/depenses']">
+      <ion-icon name="people-outline" aria-label="Dépenses"></ion-icon>
+      <ion-label>Parrainage</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profil" [routerLink]="['/tabs/profil']">
+      <ion-icon name="person-outline" aria-label="Profil"></ion-icon>
+      <ion-label>Profil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="notifications" [routerLink]="['/tabs/notifications']">
+      <ion-icon name="notifications-outline" aria-label="Notifications"></ion-icon>
+      <ion-label>Notifications</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>

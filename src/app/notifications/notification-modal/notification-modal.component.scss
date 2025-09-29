@@ -1,0 +1,26 @@
+ion-header {
+  --background: var(--ion-color-primary);
+  --color: #fff;
+}
+
+.title-center {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+ion-card {
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+ion-item {
+  --padding-start: 8px;
+  --inner-padding-end: 8px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+ion-label {
+  font-size: 1rem;
+}

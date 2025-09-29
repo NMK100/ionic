@@ -2,10 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   IonLabel,
-  IonTabButton,
-  IonTabBar,
   IonToolbar,
-  IonFooter,
   IonItem,
   IonCard,
   IonList,
@@ -32,10 +29,7 @@ interface Rapport {
     CommonModule,
     IonLabel,
     IonIcon,
-    IonTabButton,
-    IonTabBar,
     IonToolbar,
-    IonFooter,
     IonItem,
     IonCard,
     IonList,
